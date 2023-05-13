@@ -47,6 +47,8 @@ Data Analysis
 
 Created and Exported SQL schema file nad PNG from QuickDBD: https://www.quickdatabasediagrams.com/
 
+Data would only import with VARCHAR fields, INT would not work 
+
 Department data was imported with double quote, so I worked with Ask BCS and was able to run the following to fix it
 UPDATE departments
 SET dept_name= REPLACE(dept_name,'"','') 
